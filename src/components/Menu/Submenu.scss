@@ -1,0 +1,12 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    .dropdown-toggle {
+        color: #007bff;
+        cursor: pointer;
+        border-radius: 4px;
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+}
