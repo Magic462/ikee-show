@@ -14,7 +14,7 @@
     "jsx": "react-jsx", // 适用于 React 17+
     "experimentalDecorators": true,
     "esModuleInterop": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable","dom", "esnext"],
+    "lib": ["ES2020", "DOM", "DOM.Iterable", "ESNext"],
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
