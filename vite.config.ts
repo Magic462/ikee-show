@@ -8,4 +8,5 @@ export default defineConfig({
   build: {
     outDir: 'dist', // 确保这里是 'dist'
   },
+  assetsInclude: ['**/*.png'],
 })

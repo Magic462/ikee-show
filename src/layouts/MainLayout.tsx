@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
+import logo from '../assets/Logo.png';
 // import { useNavigate } from 'react-router-dom';
 // import './MainLayout.scss'; // 引入样式文件
 
@@ -21,7 +22,7 @@ const MainLayout: React.FC = () => {
         <div>
             <header>
                 <div className="pic">
-                    <img src="/src/assets/Logo.png" />
+                    <img src={logo} />
                 </div>
                 <div className="search">Search</div>
                 <div className='nav'>

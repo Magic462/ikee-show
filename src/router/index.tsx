@@ -62,6 +62,8 @@ const router = createBrowserRouter([
             //404
         ]
     }
-])
+], {
+    basename: '/ikee-show'
+  })
 
 export default router;
