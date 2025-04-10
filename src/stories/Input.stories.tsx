@@ -3,7 +3,7 @@
 // import {Input} from 'ikee-components'
 import Input from '../components/Input'
 import { action } from '@storybook/addon-actions';
-import type { Meta, Story } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 
 const meta: Meta<typeof Input> = {
   // title: 'Input',
@@ -37,7 +37,7 @@ const meta: Meta<typeof Input> = {
 };
 
 export default meta;
-const Template: Story<typeof Input> = (args) => <Input {...args} />;
+const Template: StoryFn<typeof Input> = (args) => <Input {...args} />;
 
 
 export const Default = Template.bind({});
@@ -48,14 +48,14 @@ Default.args = {
 
 export const DifferentSizes = () => (
     <>
-        <Input size="small" placeholder="size = small" />
-        <Input size="large" placeholder="size = large" />
+        <Input customsize="small" placeholder="size = small" />
+        <Input customsize="large" placeholder="size = large" />
     </>
 );
 
 export const Disabled = () => (
     <>
-        <Input size="small" placeholder="禁用输入框" disabled />
+        <Input customsize="small" placeholder="禁用输入框" disabled />
     </>
 );
 

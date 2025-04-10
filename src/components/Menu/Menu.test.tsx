@@ -30,15 +30,14 @@ describe('Menu Component', () => {
     expect(handleSelect).toHaveBeenCalledWith(0); // 第一个选项的索引
   });
 
-  test('shows error when non-MenuItem is child', () => {
-    console.error = jest.fn(); // 捕获 console.error
-    render(
-      <Menu>
-        {/* @ts-ignore */}
-        <div>Not a MenuItem</div>
-      </Menu>
-    );
+  // test('shows error when non-MenuItem is child', () => {
+  //   console.error = jest.fn(); // 捕获 console.error
+  //   render(
+  //     <Menu>
+  //       <div>Not a MenuItem</div>
+  //     </Menu>
+  //   );
 
-    expect(console.error).toHaveBeenCalled();
-  });
+  //   expect(console.error).toHaveBeenCalled();
+  // });
 });

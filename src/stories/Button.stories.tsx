@@ -2,7 +2,7 @@
 // import {Button} from 'ikee-components'
 import Button from '../components/Button'
 import { action } from '@storybook/addon-actions';
-import type { Meta, Story } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 
 const meta: Meta<typeof Button> = {
   // title: 'Button',
@@ -52,7 +52,7 @@ const meta: Meta<typeof Button> = {
 
 export default meta;
 
-const Template: Story<typeof Button> = (args) => <Button {...args} />;
+const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;
 
 
 // // 定义不同的故事

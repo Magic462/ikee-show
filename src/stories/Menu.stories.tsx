@@ -4,7 +4,7 @@ import MenuItem from '../components/Menu/MenuItem';
 import Submenu from '../components/Menu/Submenu';
 // import {Menu,MenuItem,Submenu} from 'ikee-components'
 import { action } from '@storybook/addon-actions';
-import type { Meta, Story } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 
 
 const meta: Meta<typeof Menu> = {
@@ -27,7 +27,7 @@ const meta: Meta<typeof Menu> = {
 };
 
 export default meta;
-const Template: Story<typeof Menu> = (args) => <Menu {...args} />;
+const Template: StoryFn<typeof Menu> = (args) => <Menu {...args} />;
 
 
 export const Default = Template.bind({});

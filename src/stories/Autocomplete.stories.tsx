@@ -3,7 +3,7 @@ import AutoComplete from '../components/Autocomplete';
 // import {AutoComplete} from 'ikee-components'
 
 import { action } from '@storybook/addon-actions';
-import type { Meta, Story } from '@storybook/react';
+import type { Meta, StoryFn } from '@storybook/react';
 
 const meta: Meta<typeof AutoComplete> = {
   // title: 'Autocomlete',
@@ -33,7 +33,7 @@ const meta: Meta<typeof AutoComplete> = {
 };
 
 export default meta;
-const Template: Story<typeof AutoComplete> = (args) => <AutoComplete {...args} />;
+const Template: StoryFn<typeof AutoComplete> = (args) => <AutoComplete {...args} />;
 
 
 // 模拟建议项数据

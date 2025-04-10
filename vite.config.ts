@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/ikee-show/',
   plugins: [react()],
+  build: {
+    outDir: 'dist', // 确保这里是 'dist'
+  },
 })

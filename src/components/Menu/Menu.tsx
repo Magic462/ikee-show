@@ -11,7 +11,7 @@ interface MenuContextProps {
 export const MenuContext = createContext<MenuContextProps | undefined>(undefined);
 
 type MenuMode = 'horizontal'|'vertical';
-interface MenuProps {
+export interface MenuProps {
     defaultIndex?: number;
     mode?: MenuMode;
     style?: React.CSSProperties;
