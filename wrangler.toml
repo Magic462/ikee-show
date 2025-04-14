@@ -1,3 +1,0 @@
-name = "ikee"  # 你的 worker 名称
-main = "dist/main.js"  # 确保这里指向你的入口文件
-compatibility_date = "2025-03-20"  # 添加兼容性日期
